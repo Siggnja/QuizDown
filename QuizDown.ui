@@ -44,7 +44,7 @@
        <widget class="QPushButton" name="pushButton">
         <property name="geometry">
          <rect>
-          <x>310</x>
+          <x>520</x>
           <y>460</y>
           <width>111</width>
           <height>41</height>
@@ -149,17 +149,6 @@
          </rect>
         </property>
        </widget>
-       <zorder>head_label</zorder>
-       <zorder>info_label</zorder>
-       <zorder>pushButton</zorder>
-       <zorder>diff_combo</zorder>
-       <zorder>head_label</zorder>
-       <zorder>quest_label</zorder>
-       <zorder>ques_combo</zorder>
-       <zorder>cata_label</zorder>
-       <zorder>info_label</zorder>
-       <zorder>dif_label</zorder>
-       <zorder>cata_combo</zorder>
       </widget>
       <widget class="QWidget" name="quest_tab">
        <property name="enabled">

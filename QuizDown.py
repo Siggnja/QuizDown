@@ -26,7 +26,7 @@ class Ui_Form(object):
         self.front_tab.setEnabled(True)
         self.front_tab.setObjectName("front_tab")
         self.pushButton = QtWidgets.QPushButton(self.front_tab)
-        self.pushButton.setGeometry(QtCore.QRect(310, 460, 111, 41))
+        self.pushButton.setGeometry(QtCore.QRect(520, 460, 111, 41))
         self.pushButton.setObjectName("pushButton")
         self.diff_combo = QtWidgets.QComboBox(self.front_tab)
         self.diff_combo.setGeometry(QtCore.QRect(210, 430, 174, 20))
@@ -52,17 +52,6 @@ class Ui_Form(object):
         self.cata_combo = QtWidgets.QComboBox(self.front_tab)
         self.cata_combo.setGeometry(QtCore.QRect(210, 370, 174, 20))
         self.cata_combo.setObjectName("cata_combo")
-        self.head_label.raise_()
-        self.info_label.raise_()
-        self.pushButton.raise_()
-        self.diff_combo.raise_()
-        self.head_label.raise_()
-        self.quest_label.raise_()
-        self.ques_combo.raise_()
-        self.cata_label.raise_()
-        self.info_label.raise_()
-        self.dif_label.raise_()
-        self.cata_combo.raise_()
         self.tabWidget.addTab(self.front_tab, "")
         self.quest_tab = QtWidgets.QWidget()
         self.quest_tab.setEnabled(False)
@@ -126,4 +115,14 @@ class Ui_Form(object):
         self.finish_button.setText(_translate("Form", "Finish"))
         self.result_label.setText(_translate("Form", "TextLabel"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.results_tab), _translate("Form", "Results"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
 
