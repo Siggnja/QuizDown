@@ -13,5 +13,6 @@
         <file>Graphics/Start_quiz.png</file>
         <file>Graphics/Background Clean.png</file>
         <file>Graphics/Background Grey.png</file>
+        <file>Graphics/Winner.png</file>
     </qresource>
 </RCC>
