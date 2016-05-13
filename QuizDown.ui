@@ -35,9 +35,9 @@
       <string notr="true">font: 14pt &quot;Gadugi&quot;;</string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
-     <widget class="QWidget" name="stackedWidgetPage1" native="true">
+     <widget class="QWidget" name="stackedWidgetPage1">
       <layout class="QGridLayout" name="gridLayout">
        <item row="5" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -318,7 +318,7 @@ background-color: rgb(255, 246, 246);</string>
         </spacer>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="front_logo">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -341,7 +341,7 @@ background-color: rgb(255, 246, 246);</string>
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_7">
            <item alignment="Qt::AlignHCenter">
-            <widget class="QLabel" name="label_4">
+            <widget class="QLabel" name="pl1_name_label">
              <property name="maximumSize">
               <size>
                <width>200</width>
@@ -357,7 +357,7 @@ background-color: rgb(255, 246, 246);</string>
             </widget>
            </item>
            <item alignment="Qt::AlignHCenter">
-            <widget class="QLineEdit" name="lineEdit">
+            <widget class="QLineEdit" name="p1_name">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -386,7 +386,7 @@ background-color: rgb(255, 246, 246);</string>
             <number>0</number>
            </property>
            <item alignment="Qt::AlignHCenter">
-            <widget class="QLabel" name="label_5">
+            <widget class="QLabel" name="pl2_name_label">
              <property name="styleSheet">
               <string notr="true">font: 14pt &quot;Gill Sans Ultra Bold&quot;;</string>
              </property>
@@ -396,7 +396,7 @@ background-color: rgb(255, 246, 246);</string>
             </widget>
            </item>
            <item alignment="Qt::AlignHCenter">
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="p2_name">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -449,7 +449,7 @@ background-color: rgb(255, 246, 246);</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="stackedWidgetPage2" native="true">
+     <widget class="QWidget" name="stackedWidgetPage2">
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="6" column="0" colspan="3">
         <spacer name="horizontalSpacer_13">
@@ -749,7 +749,7 @@ p, li { white-space: pre-wrap; }
         </spacer>
        </item>
        <item row="0" column="0" colspan="3">
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="second_logo">
          <property name="maximumSize">
           <size>
            <width>16777215</width>
@@ -803,10 +803,12 @@ p, li { white-space: pre-wrap; }
        <item row="1" column="4" colspan="2">
         <widget class="QLabel" name="Question_tracker">
          <property name="styleSheet">
-          <string notr="true">font: 18pt &quot;Gadugi&quot;;</string>
+          <string notr="true">font: 75 15pt &quot;Eras Demi ITC&quot;;
+color: rgb(46, 204, 113);
+</string>
          </property>
          <property name="text">
-          <string/>
+          <string>1 of 5</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -815,7 +817,7 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="stackedWidgetPage3" native="true">
+     <widget class="QWidget" name="stackedWidgetPage3">
       <layout class="QGridLayout" name="gridLayout_4">
        <item row="4" column="1">
         <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -833,20 +835,27 @@ p, li { white-space: pre-wrap; }
           </spacer>
          </item>
          <item>
-          <widget class="QLabel" name="finish_button">
-           <property name="maximumSize">
+          <widget class="QPushButton" name="finish_button">
+           <property name="minimumSize">
             <size>
-             <width>200</width>
-             <height>150</height>
+             <width>150</width>
+             <height>75</height>
             </size>
            </property>
            <property name="text">
             <string/>
            </property>
-           <property name="pixmap">
-            <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/Finish.png</pixmap>
+           <property name="icon">
+            <iconset resource="myndir.qrc">
+             <normaloff>:/new/prefix1/Graphics/Finish.png</normaloff>:/new/prefix1/Graphics/Finish.png</iconset>
            </property>
-           <property name="scaledContents">
+           <property name="iconSize">
+            <size>
+             <width>150</width>
+             <height>75</height>
+            </size>
+           </property>
+           <property name="flat">
             <bool>true</bool>
            </property>
           </widget>
@@ -1109,7 +1118,7 @@ p, li { white-space: pre-wrap; }
         </layout>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="third_logo">
          <property name="minimumSize">
           <size>
            <width>500</width>
@@ -1168,7 +1177,7 @@ p, li { white-space: pre-wrap; }
           <bool>true</bool>
          </property>
          <property name="rowCount">
-          <number>7</number>
+          <number>9</number>
          </property>
          <property name="columnCount">
           <number>2</number>
@@ -1223,6 +1232,8 @@ p, li { white-space: pre-wrap; }
            <string>7</string>
           </property>
          </row>
+         <row/>
+         <row/>
          <column>
           <property name="text">
            <string>Score</string>
@@ -1236,7 +1247,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item row="1" column="1" alignment="Qt::AlignHCenter">
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="highscore_logo">
          <property name="maximumSize">
           <size>
            <width>350</width>
@@ -1262,7 +1273,7 @@ p, li { white-space: pre-wrap; }
  </widget>
  <resources>
   <include location="myndir.qrc"/>
-  <include location="../../../../../../../../.designer/backup/myndir.qrc"/>
+  <include location="myndir.qrc"/>
  </resources>
  <connections/>
 </ui>
