@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>893</width>
-    <height>717</height>
+    <width>863</width>
+    <height>716</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -31,12 +31,15 @@
      <property name="enabled">
       <bool>true</bool>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Gadugi&quot;;</string>
+     </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="stackedWidgetPage1" native="true">
       <layout class="QGridLayout" name="gridLayout">
-       <item row="3" column="0">
+       <item row="5" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
           <spacer name="horizontalSpacer">
@@ -116,6 +119,9 @@
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
@@ -142,8 +148,13 @@
                <height>16777215</height>
               </size>
              </property>
+             <property name="focusPolicy">
+              <enum>Qt::WheelFocus</enum>
+             </property>
              <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(255, 246, 246);
+</string>
              </property>
             </widget>
            </item>
@@ -168,6 +179,9 @@
             <spacer name="verticalSpacer_4">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -202,7 +216,8 @@
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(255, 246, 246);</string>
              </property>
             </widget>
            </item>
@@ -227,6 +242,9 @@
             <spacer name="verticalSpacer_6">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
@@ -261,7 +279,8 @@
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+              <string notr="true">font: 12pt &quot;Arial Rounded MT Bold&quot;;
+background-color: rgb(255, 246, 246);</string>
              </property>
             </widget>
            </item>
@@ -282,7 +301,7 @@
          </item>
         </layout>
        </item>
-       <item row="4" column="0">
+       <item row="6" column="0">
         <spacer name="verticalSpacer_7">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -293,23 +312,7 @@
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>70</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="0">
-        <spacer name="verticalSpacer_11">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>10</width>
-           <height>30</height>
+           <height>40</height>
           </size>
          </property>
         </spacer>
@@ -330,11 +333,125 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_4">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Gill Sans Ultra Bold&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Player 1</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter name ..</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_5">
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Gill Sans Ultra Bold&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Player 2</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter name ..</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="0">
+        <spacer name="verticalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="0">
+        <spacer name="verticalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="stackedWidgetPage2" native="true">
       <layout class="QGridLayout" name="gridLayout_3">
-       <item row="4" column="0" colspan="3">
+       <item row="6" column="0" colspan="3">
         <spacer name="horizontalSpacer_13">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -350,7 +467,7 @@
          </property>
         </spacer>
        </item>
-       <item row="1" column="1" colspan="5">
+       <item row="3" column="1" colspan="5">
         <widget class="QTextBrowser" name="tab_quest_label">
          <property name="styleSheet">
           <string notr="true">font: 18pt &quot;Gadugi&quot;;
@@ -409,7 +526,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item row="2" column="0" rowspan="2" colspan="7">
+       <item row="4" column="0" rowspan="2" colspan="7">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <property name="rightMargin">
           <number>0</number>
@@ -500,7 +617,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </item>
-       <item row="5" column="0" rowspan="3" colspan="7">
+       <item row="7" column="0" rowspan="3" colspan="7">
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <spacer name="horizontalSpacer_12">
@@ -589,7 +706,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </item>
-       <item row="8" column="3">
+       <item row="10" column="3">
         <spacer name="verticalSpacer_8">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -647,7 +764,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="4" column="3">
+       <item row="6" column="3">
         <widget class="QPushButton" name="hint_button">
          <property name="text">
           <string/>
@@ -667,7 +784,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="4" column="4" colspan="3">
+       <item row="6" column="4" colspan="3">
         <spacer name="horizontalSpacer_14">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -683,11 +800,73 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
+       <item row="1" column="4" colspan="2">
+        <widget class="QLabel" name="Question_tracker">
+         <property name="styleSheet">
+          <string notr="true">font: 18pt &quot;Gadugi&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="stackedWidgetPage3" native="true">
       <layout class="QGridLayout" name="gridLayout_4">
-       <item row="2" column="2" rowspan="2">
+       <item row="4" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <spacer name="horizontalSpacer_15">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="finish_button">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/Finish.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_16">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="2" rowspan="2">
         <layout class="QVBoxLayout" name="verticalLayout_5">
          <item alignment="Qt::AlignHCenter">
           <widget class="QLabel" name="result_winner_p2">
@@ -808,7 +987,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </item>
-       <item row="2" column="0" rowspan="2">
+       <item row="3" column="0" rowspan="2">
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <item alignment="Qt::AlignHCenter">
           <widget class="QLabel" name="result_winner_p1">
@@ -978,53 +1157,102 @@ p, li { white-space: pre-wrap; }
         </spacer>
        </item>
        <item row="3" column="1">
-        <layout class="QHBoxLayout" name="horizontalLayout_7">
-         <item>
-          <spacer name="horizontalSpacer_15">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QLabel" name="finish_button">
-           <property name="maximumSize">
-            <size>
-             <width>200</width>
-             <height>150</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/Finish.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_16">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="rowCount">
+          <number>7</number>
+         </property>
+         <property name="columnCount">
+          <number>2</number>
+         </property>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Score</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item row="1" column="1" alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label_6">
+         <property name="maximumSize">
+          <size>
+           <width>350</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/Highscore.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
