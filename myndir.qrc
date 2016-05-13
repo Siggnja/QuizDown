@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Graphics/Background.png</file>
+        <file>Graphics/Check_answer.png</file>
+        <file>Graphics/Finish.png</file>
+        <file>Graphics/Hint_button.png</file>
+        <file>Graphics/Logo.png</file>
+        <file>Graphics/Logo2.png</file>
+        <file>Graphics/next_question.png</file>
+        <file>Graphics/player 1.png</file>
+        <file>Graphics/Player 2.png</file>
+        <file>Graphics/skip_question.png</file>
+        <file>Graphics/Start_quiz.png</file>
+        <file>Graphics/Background Clean.png</file>
+        <file>Graphics/Background Grey.png</file>
+    </qresource>
+</RCC>
