@@ -2,6 +2,7 @@ import json
 import requests
 import random
 from difflib import SequenceMatcher
+import re
 
 def check_answer(correct, answer): #Checks the ratio of the the answer compared to the correct answer
     s = SequenceMatcher(None, correct.upper(), answer.upper())
@@ -35,8 +36,17 @@ def generate_questions(amount, cate, diff): #Generates question from jservice da
         if v['value'] != None and v['value'] <= diff:
             correct_diff.append(questions[i])
     numbers = random.sample(range(1, len(correct_diff)), amount)
-    for i, val in enumerate(numbers):
-        d.append((correct_diff[val]['question'],correct_diff[val]['answer']))
+
+
+    for i in range(len(numbers)):
+        ans = correct_diff[numbers[i]]['answer'] 
+        if re.search("<", ans):
+            ans = ans[3:-4]
+
+        if ans.find("(") != -1:
+            ans = ans[0:ans.find("(")]
+        
+        d.append((correct_diff[numbers[i]]['question'], ans))
     
     return d
     
