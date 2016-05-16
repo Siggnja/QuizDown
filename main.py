@@ -20,24 +20,25 @@ class Quiz:
         self.PL1 = 0 #Player 1 score
         self.PL2 = 0 #Player 2 score
         self.ROUND = 1 #Players turn: 1 or 2
-        self.HINT = 3 #Hints for questions
+        self.HINT = 0 #Hints for questions
         self.QuestionScore = 10 #Highest score available for each
         self.pl1_name = ""
         self.pl2_name = ""
         self.questionCount = 1
 
     def _getHint(self,dic, u): #Gets hint when hint button is displayed
-        if self.QuestionScore>2:
-            self.QuestionScore -= 2
-        u.ans_lineEdit.setText(dic[self.count][1][0:self.HINT])
-        self.HINT += 3
+        if self.QuestionScore>4:
+            self.QuestionScore -= 3
+            self.HINT += (len(dic[self.count][1]))//4
+            u.ans_lineEdit.setText(dic[self.count][1][0:self.HINT])
+
 
     def _newQuestion(self):
         # Resettimg the variables for each question
         self.questionCount += 1
-        self.HINT = 3
-        self.QuestionScore = 10
         self.count += 1
+        self.HINT = 0
+        self.QuestionScore = 10
 
     def _clearQuestion(self,dic, u): #Clears a question when answer is correct, or when skip button is clicked
         u.cont_button.setEnabled(False)
@@ -82,7 +83,7 @@ class Quiz:
             else:
                 self.PL2 += self.QuestionScore
         else:
-            u.ans_lineEdit.setText("")
+            u.ans_lineEdit.setText(dic[self.count][1][0:self.HINT])
 
     def _restartMe(self): #Restart the program when the finish button is clicked
         os.popen(os.path.abspath(__file__))
