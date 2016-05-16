@@ -2,8 +2,6 @@ import QuizDown
 import Questions
 import json
 import requests
-from bs4 import BeautifulSoup
-from pprint import pprint as pp
 import random
 from difflib import SequenceMatcher
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -32,6 +30,7 @@ class Quiz:
             self.QuestionScore -= 2
         u.ans_lineEdit.setText(dic[self.count][1][0:self.HINT])
         self.HINT += 3
+
     def _newQuestion(self):
         # Resettimg the variables for each question
         self.questionCount += 1
@@ -57,10 +56,13 @@ class Quiz:
             u.stackedWidget.setCurrentIndex(2)
             res = [(self.pl1_name,(self.PL1)/(len(dic)*10)),(self.pl2_name,(self.PL2)/(len(dic)*10))]
             self._sqlResults(u,res)
+
         else:
+            #Player 2's turn
             self.ROUND = 2
             self.questionCount=1
             self.count = 0
+
             u.Question_tracker.setText(str(self.questionCount) + " of " + str(len(dic)))
             u.tab_quest_label.setText(dic[self.count][0])
             u.ans_lineEdit.setText("")
@@ -92,10 +94,12 @@ class Quiz:
          u.stackedWidget.setCurrentIndex(1)
          u.cont_button.setEnabled(False)
          selected = self._createCombo(u)
+
          #Creates the questions
          dic = Questions.generate_questions(int(selected[2]), Questions.category(selected[1]), Questions.getDifficulty(selected[0]))
          u.Question_tracker.setText(str(self.questionCount) + " of " + str(len(dic)))
          u.tab_quest_label.setText(dic[0][0])
+
          #List of pushable buttons
          u.skip_button.pressed.connect(lambda: self._clearQuestion(dic, u))
          u.check_answer_button.clicked.connect(lambda: self._getLineAns(u, dic))

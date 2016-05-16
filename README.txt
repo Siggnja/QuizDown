@@ -14,7 +14,7 @@ QuizDown gets its questions from an online database jservice.io, the questions g
 
 QuizDown uses a library called SequenceMatcher to calculate the similarity ratio between the users answer and the correct answer. If the ratio is 80% or higher the answer must surely be correct!
 
-When a match is played QuizDown stores the names of the players and their scores in an SQL database. The information in this database is then used to display the highscore table after each match.
+When a match is played QuizDown stores the names of the players and their scores in an sqllite database. The information in this database is then used to display the highscore table after each match.
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
