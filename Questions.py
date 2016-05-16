@@ -16,7 +16,7 @@ def check_answer(correct, answer): #Checks the ratio of the the answer compared 
 def category(cate): #Return the number of the category corresponding to the database at jservice
 
     d = {'Sports' : 42, 'Animals' : 21, 'History' : 114, 'Brand Names' : 2537,
-         'Pop Music' : 770}
+         'Pop Music' : 770, 'Stupid Answers' : 136, 'People' : 442}
 
     return d[cate]
 

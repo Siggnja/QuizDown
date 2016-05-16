@@ -11,7 +11,8 @@ import os,subprocess
 
 dif = ['Easy', 'Medium', 'Hard'] #List of available difficulty levels
 questions = ['5', '10', '15', '20'] #List of available numer of questions
-categories = ['Animals', 'Brand Names', 'History', 'Pop Music', 'Sports'] #List of available categories
+categories = ['Animals', 'Brand Names', 'History', 'People', 'Pop Music',
+              'Sports', 'Stupid Answers'] #List of available categories
 
 class Quiz:
     def __init__(self):
