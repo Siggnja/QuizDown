@@ -15,5 +15,8 @@
         <file>Graphics/Background Grey.png</file>
         <file>Graphics/Winner.png</file>
         <file>Graphics/Highscore.png</file>
+        <file>Graphics/paper.png</file>
+        <file>Graphics/Favicon.png</file>
+        <file>Graphics/Arrow.png</file>
     </qresource>
 </RCC>

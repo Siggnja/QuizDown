@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>863</width>
-    <height>716</height>
+    <width>985</width>
+    <height>782</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -21,6 +21,10 @@
   </property>
   <property name="windowTitle">
    <string>QuizDown</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="myndir.qrc">
+    <normaloff>:/new/prefix1/Graphics/Favicon.png</normaloff>:/new/prefix1/Graphics/Favicon.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/new/prefix1/Graphics/Background Clean.png);</string>
@@ -451,6 +455,54 @@ background-color: rgb(255, 246, 246);</string>
      </widget>
      <widget class="QWidget" name="stackedWidgetPage2">
       <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="6">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+          <widget class="QLabel" name="Player_1">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/player 1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignTop">
+          <widget class="QLabel" name="Current_guesser">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 16pt &quot;Gill Sans Ultra Bold&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
        <item row="6" column="0" colspan="3">
         <spacer name="horizontalSpacer_13">
          <property name="orientation">
@@ -466,49 +518,6 @@ background-color: rgb(255, 246, 246);</string>
           </size>
          </property>
         </spacer>
-       </item>
-       <item row="3" column="1" colspan="5">
-        <widget class="QTextBrowser" name="tab_quest_label">
-         <property name="styleSheet">
-          <string notr="true">font: 18pt &quot;Gadugi&quot;;
-background-image: url(:/new/prefix1/Graphics/Background Grey.png);</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="html">
-          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gadugi'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="cursorWidth">
-          <number>1</number>
-         </property>
-         <property name="placeholderText">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="Player_1">
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>100</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="myndir.qrc">:/new/prefix1/Graphics/player 1.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
        </item>
        <item row="0" column="3">
         <spacer name="verticalSpacer_10">
@@ -526,7 +535,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item row="4" column="0" rowspan="2" colspan="7">
+       <item row="4" column="0" rowspan="2" colspan="8">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <property name="rightMargin">
           <number>0</number>
@@ -617,7 +626,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </item>
-       <item row="7" column="0" rowspan="3" colspan="7">
+       <item row="9" column="0" rowspan="3" colspan="8">
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <spacer name="horizontalSpacer_12">
@@ -669,6 +678,28 @@ p, li { white-space: pre-wrap; }
           </spacer>
          </item>
          <item>
+          <widget class="QLabel" name="next_arrow">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QPushButton" name="cont_button">
            <property name="text">
             <string/>
@@ -706,7 +737,7 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </item>
-       <item row="10" column="3">
+       <item row="12" column="3">
         <spacer name="verticalSpacer_8">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -722,10 +753,13 @@ p, li { white-space: pre-wrap; }
          </property>
         </spacer>
        </item>
-       <item row="0" column="6">
+       <item row="0" column="7">
         <spacer name="horizontalSpacer_7">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -740,9 +774,12 @@ p, li { white-space: pre-wrap; }
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>160</width>
            <height>20</height>
           </size>
          </property>
@@ -784,7 +821,7 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="6" column="4" colspan="3">
+       <item row="6" column="4" colspan="4">
         <spacer name="horizontalSpacer_14">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -802,8 +839,21 @@ p, li { white-space: pre-wrap; }
        </item>
        <item row="1" column="4" colspan="2">
         <widget class="QLabel" name="Question_tracker">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">font: 75 15pt &quot;Eras Demi ITC&quot;;
+border-image: url(:/new/prefix1/Graphics/paper.png);
 color: rgb(46, 204, 113);
 </string>
          </property>
@@ -812,6 +862,30 @@ color: rgb(46, 204, 113);
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="6">
+        <widget class="QTextBrowser" name="tab_quest_label">
+         <property name="styleSheet">
+          <string notr="true">font: 18pt &quot;Gadugi&quot;;
+background-image: url(:/new/prefix1/Graphics/Background Grey.png);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Gadugi'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="cursorWidth">
+          <number>1</number>
+         </property>
+         <property name="placeholderText">
+          <string/>
          </property>
         </widget>
        </item>
@@ -1167,6 +1241,12 @@ color: rgb(46, 204, 113);
        </item>
        <item row="3" column="1">
         <widget class="QTableWidget" name="tableWidget">
+         <property name="contextMenuPolicy">
+          <enum>Qt::PreventContextMenu</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
          <property name="showGrid">
           <bool>false</bool>
          </property>
