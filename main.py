@@ -120,6 +120,7 @@ class Quiz:
         # Creates the sqllite connection
         conn = sqlite3.connect("UserData.sqlite")
         c = conn.cursor()
+        c.execute("CREATE TABLE IF NOT EXISTS 'UserData' ('id' INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , 'name' VARCHAR, 'highscore' DOUBLE NOT NULL  DEFAULT 0)")
         c.executemany("INSERT INTO UserData ('name','highscore') VALUES(?,?)", res)
         ro = 0
         for row in c.execute('SELECT * FROM UserData ORDER BY highscore DESC'):
